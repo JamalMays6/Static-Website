@@ -22,6 +22,7 @@ Rise Up Bank, a fintech startup, relies heavily on its website to attract, infor
 
 #### What is Azure Blob Storage? 
 Azure Blob Storage is Microsoft's object storage solution for the cloud. It’s optimized for storing massive amounts of unstructured data, like text or binary data. You can use it to store files, backups, logs, and host static websites, similar to AWS S3.
+
 <img width="281" height="281" alt="2e13e292-be37-40f4-9516-cb74f555c81c" src="https://github.com/user-attachments/assets/6669e857-2eeb-411d-9af8-d7dfe8ee97b7" />
 
 ---
