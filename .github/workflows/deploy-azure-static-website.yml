@@ -1,0 +1,31 @@
+name: Deploy Rise Up Bank static site to Azure Blob Storage
+
+on:
+  push:
+    branches:
+      - main          # run when you push to main
+  workflow_dispatch:  # allow manual run from the Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+      AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
+      AZURE_STATIC_CONTAINER: '$web'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload static website to Blob Storage using account key
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name "$AZURE_STORAGE_ACCOUNT" \
+              --account-key "$AZURE_STORAGE_KEY" \
+              --destination "$AZURE_STATIC_CONTAINER" \
+              --source "website" \
+              --overwrite true
