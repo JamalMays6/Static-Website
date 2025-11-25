@@ -26,26 +26,30 @@ flowchart LR
       A[Edit HTML/CSS\nStatic site files]
       B[git commit & push]
     end
-
+```
+```mermaid
     subgraph GitHub["GitHub Repo\n(JamalMays6/Static-Website)"]
       C[Source code\nwebsite/ folder]
       D[GitHub Actions\nCI/CD Workflow]
     end
-
+```
+```mermaid
     subgraph Azure["Azure"]
       E[Storage Account\nriseupstaticweb]
       F["$web container\nStatic Website Hosting"]
     end
-
+```
+```mermaid
     subgraph User["End User Browser"]
       G[Customer visits\nriseupstaticweb.z20.web.core.windows.net]
     end
-
+```
+```mermaid
     A --> B --> C
     C --> D
     D -->|Deploy static files| F
     F --> G
-
+```
 ---
 
 #### What is Azure Blob Storage? 
