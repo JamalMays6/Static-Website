@@ -18,38 +18,7 @@ This guide walks you through setting up a static website using Azure Blob Storag
 
 Rise Up Bank, a fintech startup, relies heavily on its website to attract, inform, and onboard clients. The company previously hosted its site on on-premises infrastructure, but growing maintenance costs and poor scalability led to operational inefficiencies.
 
-## 🏗️ Architecture Overview
 
-```mermaid
-flowchart LR
-    subgraph Dev["Developer Laptop (VS Code)"]
-      A[Edit HTML/CSS\nStatic site files]
-      B[git commit & push]
-    end
-```
-```mermaid
-    subgraph GitHub["GitHub Repo\n(JamalMays6/Static-Website)"]
-      C[Source code\nwebsite/ folder]
-      D[GitHub Actions\nCI/CD Workflow]
-    end
-```
-```mermaid
-    subgraph Azure["Azure"]
-      E[Storage Account\nriseupstaticweb]
-      F["$web container\nStatic Website Hosting"]
-    end
-```
-```mermaid
-    subgraph User["End User Browser"]
-      G[Customer visits\nriseupstaticweb.z20.web.core.windows.net]
-    end
-```
-```mermaid
-    A --> B --> C
-    C --> D
-    D -->|Deploy static files| F
-    F --> G
-```
 ---
 
 #### What is Azure Blob Storage? 
