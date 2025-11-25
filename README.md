@@ -43,9 +43,9 @@ flowchart LR
 
     A --> B --> C
     C --> D
-    D -->|az storage blob upload-batch| F
-    E --> F
+    D -->|Deploy static files| F
     F --> G
+
 ---
 
 #### What is Azure Blob Storage? 
