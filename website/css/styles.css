@@ -68,10 +68,11 @@ h1 {
 }
 
 .footer {
+    max-width: 1000px;      /* match your main page width */
+    margin: 40px auto;      /* center footer container itself */
     text-align: center;
-    font-size: 12px;       /* Smaller text */
-    color: #fbfbfb;           /* White text */
-    margin-top: 40px;
+    font-size: 10px;
+    color: #fbfbfb;
     padding: 20px 0;
     border-top: 1px solid #ddd;
 }
