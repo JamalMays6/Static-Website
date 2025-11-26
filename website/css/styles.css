@@ -82,4 +82,44 @@ h1 {
     text-align: center;
     font-size: 10px;
     color: #fbfbfb;
+}/* Footer outer container */
+.footer {
+    max-width: 1000px;             
+    margin: 40px auto 20px;        
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+}
+
+/* Inner flex container to align text + badge */
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;             /* spacing between text and badge */
+    flex-wrap: wrap;       /* stack on small screens */
+    text-align: center;
+}
+
+/* Footer text */
+.footer-text {
+    margin: 0;
+    font-size: 10px;
+    color: #fbfbfb;
+}
+
+/* Badge img styling */
+.footer-badge img {
+    height: 18px;          /* good small badge size */
+    vertical-align: middle;
+    opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .footer-inner {
+        flex-direction: column;
+        gap: 6px;
+    }
 }
