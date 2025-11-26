@@ -68,11 +68,18 @@ h1 {
 }
 
 .footer {
-    max-width: 1000px;      /* match your main page width */
-    margin: 40px auto;      /* center footer container itself */
+    max-width: 1000px;          /* match main content width */
+    margin: 40px auto 20px;     /* center the footer container */
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    display: flex;              /* NEW: use flexbox */
+    justify-content: center;    /* center content horizontally */
+}
+
+.footer p {
+    margin: 0;                  /* remove default paragraph margin */
     text-align: center;
     font-size: 10px;
     color: #fbfbfb;
-    padding: 20px 0;
-    border-top: 1px solid #ddd;
 }
