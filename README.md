@@ -134,7 +134,6 @@ Your website should now be live.
 > 🧰 **Tech Stack**: Azure Storage Account, Static Website Hosting, HTML/CSS  
 > 🏦 **Use Case**: Financial Startup Website Migration  
 > 📍 **Live Demo**: [https://terraformstaticweb6.z20.web.core.windows.net](https://terraformstaticweb6.z20.web.core.windows.net)
->>>>>>> 9b14facc1026db95484539f4189a0261fd56427a
-## 🗓️ Project Completion Date
+## 🗓️ Project Original Completion Date
 
 August 07, 2025
