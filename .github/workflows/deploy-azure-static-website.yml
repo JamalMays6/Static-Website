@@ -19,6 +19,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug secrets (safe) + test auth
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            echo "Account name length: ${#AZURE_STORAGE_ACCOUNT}"
+            echo "Key length: ${#AZURE_STORAGE_KEY}"
+
+            az storage container list \
+              --account-name "$AZURE_STORAGE_ACCOUNT" \
+              --account-key "$AZURE_STORAGE_KEY" \
+              --output table
+
+            echo "Key-based auth works"
+
+
       - name: Upload static website to Blob Storage using account key
         uses: azure/cli@v2
         with:
