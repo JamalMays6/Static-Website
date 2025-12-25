@@ -135,11 +135,7 @@ Your website should now be live.
 > 🚀 **Project Type**: Cloud Engineer Project  
 > 🧰 **Tech Stack**: Azure Storage Account, Static Website Hosting, HTML/CSS  
 > 🏦 **Use Case**: Financial Startup Website Migration  
-<<<<<<< HEAD
 > 📍 **Live Demo**: [https://riseupstaticweb.z20.web.core.windows.net](https://riseupstaticweb.z20.web.core.windows.net)
-=======
-> 📍 **Live Demo**: [https://terraformstaticweb6.z20.web.core.windows.net](https://terraformstaticweb6.z20.web.core.windows.net)
->>>>>>> cfc00f45fb3ddb5422ceb188816a6c982afdf08f
 ### 🗓️ Project Original Completion Date
 
 August 07, 2025
